@@ -1,6 +1,5 @@
 from sklearn.compose import ColumnTransformer
 from sklearn.pipeline import Pipeline
-from sklearn.impute import SimpleImputer
 from sklearn.preprocessing import OneHotEncoder
 from sklearn.metrics import accuracy_score
 from sklearn.model_selection import cross_val_score
@@ -42,6 +41,5 @@ def run_xgboost_pipeline():
                          scoring='roc_auc')
     
     print("Average AUC Score (with cross validation scores):", scores.mean())
-    print('\n')
 
     return score * 100

@@ -6,6 +6,5 @@ def load_data():
     project_root = current_file_path.parent.parent
     data_file_path = project_root / "data" / "heart.csv"
     df = pd.read_csv(data_file_path)
-    print(df.head())
 
     return df
