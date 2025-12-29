@@ -28,4 +28,4 @@ def run_randomforest():
     print(f"The rf model is {score * 100:.2f}% accurate.\n")
 
 
-    return score * 100
+    return score * 100, randomforest_model

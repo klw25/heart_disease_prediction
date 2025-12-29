@@ -42,4 +42,4 @@ def run_xgboost_pipeline():
     
     print("Average AUC Score (with cross validation scores):", scores.mean())
 
-    return score * 100
+    return score * 100, my_pipeline
